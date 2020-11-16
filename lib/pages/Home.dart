@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:task_plan_app/services/task.dart';
 import 'package:task_plan_app/services/homeTileListBuilder.dart';
 import 'package:task_plan_app/services/User.dart';
-import 'package:task_plan_app/services/subTask.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -16,28 +15,7 @@ class _HomeState extends State<Home> {
   // TODO define a user profile create screen
   // TODO define to secondary memory save logic
   // TODO define task and subtask add and remove functions
-  User instance = User(name:"John", myDailyTasks: <Task>[
-  Task('my_task_1','Daily'),
-  Task('my_task_2','Daily'),
-  Task('my_task_3','Daily'),
-  Task('my_task_4','Daily'),
-  Task('my_task_5','Daily')],
-      myWeeklyTasks: <Task>[
-  Task('my_task_6','Weekly'),
-  Task('my_task_7','Weekly'),
-  Task('my_task_8','Weekly'),
-  Task('my_task_9','Weekly')],
-      myMonthlyTasks: <Task>[
-  Task('my_task_10','Monthly'),
-  Task('my_task_10','Monthly'),
-  Task('my_task_10','Monthly')],
-      myYearTasks: <Task>[
-  Task('my_task_10','Year'),
-  Task('my_task_10','Year')],
-      myLongTermTask: <Task>[
-  Task('my_task_10','LongTerm')]
-
-      );
+  User instance = User(name:"John")
 
   List<String> homeTileListLayout = [
     'profileTile',
